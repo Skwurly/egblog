@@ -1,0 +1,15 @@
+{% extends 'blog/index.html' %}
+
+{% block content %}
+
+
+{% for post in posts %}
+<div class=post-header>
+  <h3>{{ post.title }}</h3>
+  <h6 class="date">  &emsp;&emsp;{{ post.created_date }}</h6>
+</div>
+
+  {{ post.text|safe|slice:':564' }}
+
+{% endfor %}
+{% endblock %}

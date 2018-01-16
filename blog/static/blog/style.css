@@ -1,0 +1,65 @@
+*{
+  margin:0px;
+
+
+}
+body{
+  background-color: #d9d9d9;
+}
+
+div.header{
+  background-color: #505050;
+  color:#c0ff33;
+  position: fixed;
+  top:0px;
+  width:100%;
+  font-size: 12px;
+  box-shadow:  0px 0px 10px 10px rgba(0,0,0,.5);
+  z-index: 100;
+  animation: titleaccent 7s;
+}
+h1.pagetitle{
+  font-family: 'Stalinist One', cursive;
+  font-weight: normal;
+  font-size: 30px;
+  margin-left: 10px;
+}
+p.subtitle{
+ font-family: 'Open Sans', sans-serif;
+ margin-bottom:5px;
+ margin-top:-10px;
+
+}
+h6.date{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 8px;
+}
+
+div.content{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top:100px;
+  font-family: 'Open Sans', sans-serif;
+  animation: fadein 3s;
+
+}
+div.post-header{
+  margin-left:-30px;
+}
+
+p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+
+}
+
+@keyframes fadein{
+  from{ background-color: black;
+        opacity: 0;}
+  to {background-color:*;
+      opacity: 1;}
+}
+@keyframes titleaccent{
+  from{color:#d9d9d9;}
+  to{color:*;}
+}
